@@ -1,0 +1,96 @@
+# ==========================================
+# Expense Tracker - Git Ignore
+# ==========================================
+
+# ------------------------------------------
+# Backend: Spring Boot / Java / Maven / H2
+# ------------------------------------------
+target/
+**/target/
+*.class
+
+# Embedded H2 Database files & logs
+data/
+**/data/
+*.mv.db
+*.trace.db
+
+# Log files
+*.log
+logs/
+**/logs/
+
+# Package files
+*.jar
+*.war
+*.nar
+*.ear
+
+# Maven wrapper binary (properties & scripts are tracked)
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+
+# ------------------------------------------
+# Frontend: React / Vite / Node
+# ------------------------------------------
+node_modules/
+**/node_modules/
+dist/
+dist-ssr/
+**/dist/
+**/dist-ssr/
+
+# Vite cache
+.vite/
+**/.vite/
+.eslintcache
+
+# Environment variables & local configs
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.local
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ------------------------------------------
+# IDEs & Editors
+# ------------------------------------------
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.classpath
+.project
+.settings/
+bin/
+out/
+.factorypath
+
+# ------------------------------------------
+# Operating System Files
+# ------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+*.tmp
+*.bak
+*.swp
+*.swo
